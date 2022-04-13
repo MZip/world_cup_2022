@@ -259,7 +259,6 @@ class Cup:
 
     def knock_out_round(self, round="round_of_16", matches={}):
     
-        i = 0
         match_no = {
             "round_of_16": 49,
             "quarter_finals": 57,
@@ -269,14 +268,14 @@ class Cup:
 
         next_matches = {}
 
-        for ii, game in enumerate(self.knock_out[round]):
+        for i, game in enumerate(self.knock_out[round]):
 
             match = [matches[game[0]], matches[game[1]]]
             
             goals = self.predict_goals(match, no_draw=True)
             winner, _, _ = self.get_game_stats(match, goals)
 
-            next_matches[f"W{match_no[round]+ii}"] = winner
+            next_matches[f"W{match_no[round]+i}"] = winner
 
         return next_matches
 
