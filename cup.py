@@ -9,10 +9,10 @@ class Cup:
     
         self.groups = {
             "A": ["QAT", "ECU", "SEN", "NED"],
-            "B": ["ENG", "IRN", "USA", "EUR"], # <- Updates
+            "B": ["ENG", "IRN", "USA", "EUR"], # <- Updates (Wales vs Scotland/Ukraine)
             "C": ["ARG", "KSA", "MEX", "POL"],
-            "D": ["FRA", "ICP-1", "DEN", "TUN"], # <- Update
-            "E": ["ESP", "ICP-2", "GER", "JPN"], # <- Update
+            "D": ["FRA", "ICP-1", "DEN", "TUN"], # <- Update (UAE/Australia vs Peru)
+            "E": ["ESP", "ICP-2", "GER", "JPN"], # <- Update (Costa Rica vs New Zealand)
             "F": ["BEL", "CAN", "MAR", "CRO"],
             "G": ["BRA", "SRB", "SUI", "CMR"],
             "H": ["POR", "GHA", "URU", "KOR"],  
